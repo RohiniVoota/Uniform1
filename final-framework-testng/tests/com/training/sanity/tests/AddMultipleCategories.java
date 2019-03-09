@@ -45,7 +45,7 @@ public class AddMultipleCategories {
 		TC064 = new AddMultipleCategoriesPOM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver);
-		// open the browser
+		// open browser
 		driver.get("http://uniform.upskills.in/admin/");
 	}
 

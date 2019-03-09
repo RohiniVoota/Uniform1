@@ -56,7 +56,7 @@ import com.training.generics.ScreenShot;
 		//To verify whether registered user details stored in database
 		@Test(dataProvider="db-inputs", dataProviderClass = LoginDataProviders.class)
 		public void validLoginTest(String firstname,String lastname, String email, String Telephone,String address1,String address2, String city,String postcode, String password, String confirm) throws InterruptedException {
-			
+			//register
 			register.MyAccount();
 			register.register();
 			String Firstname= register.Firstname("Rohini");

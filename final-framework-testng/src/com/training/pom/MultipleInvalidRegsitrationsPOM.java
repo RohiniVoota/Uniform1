@@ -19,7 +19,7 @@ public class MultipleInvalidRegsitrationsPOM {
 	@FindBy(xpath="//*[@id=\"top-links1\"]/ul/li[3]/ul/li[1]/a")		
 	private WebElement register;
 
-	//locate Account icon
+	//locate Account
 	@FindBy(xpath="//i[@class='fa fa-user']")
 	private WebElement myaccount;
 	

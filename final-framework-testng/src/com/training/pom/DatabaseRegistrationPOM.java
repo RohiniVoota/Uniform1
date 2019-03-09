@@ -68,11 +68,11 @@ public class DatabaseRegistrationPOM {
 		@FindBy(xpath="//*[@id=\"content\"]/form/fieldset[4]/div/div/label[2]/input")
 		private WebElement radio;
 		
-		//locate checkbox
+		//locate checkbox 
 		@FindBy(xpath="//*[@id=\"content\"]/form/div/div/input[1]")
 		private WebElement checkbox;
 
-	    //locate continue button
+	    //locate continue 
 		@FindBy(xpath="//*[@id=\"content\"]/form/div/div/input[2]")
 		private WebElement Button;
 		

@@ -23,7 +23,7 @@ public class SaveProductAndLogoutPOM {
 	@FindBy(id="input-password")
 	private WebElement password;
 	
-	//locate login
+	//locate login button
 	@FindBy(xpath="//*[@id=\"content\"]/div/div/div/div/div[2]/form/div[3]/button")
 	private WebElement loginBtn; 
 	

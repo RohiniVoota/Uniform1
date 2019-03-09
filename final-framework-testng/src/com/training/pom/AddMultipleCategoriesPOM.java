@@ -21,6 +21,7 @@ public class AddMultipleCategoriesPOM {
 	@FindBy(id="input-username")
 	private WebElement userName; 
 	
+	//locate passowrd
 	@FindBy(id="input-password")
 	private WebElement password;
 	

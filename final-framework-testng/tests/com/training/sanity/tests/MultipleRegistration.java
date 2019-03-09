@@ -42,7 +42,7 @@ public class MultipleRegistration {
 		TC062 = new MultipleRegistrationPOM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver);
-		// open the browser
+		// open  browser
 		driver.get(baseUrl);
 	}
 

@@ -47,7 +47,7 @@ public class SaveProductAndLogout {
         TC065 = new SaveProductAndLogoutPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
-		// open the browser 
+		// open browser 
 		driver.get("http://uniform.upskills.in/admin/");
 	}
 	
