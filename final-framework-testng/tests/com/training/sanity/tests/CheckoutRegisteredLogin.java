@@ -44,7 +44,7 @@ public class CheckoutRegisteredLogin {
 		tc0033_pom = new CheckoutRegisteredLoginPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
-		// open the browser 
+		// open browser 
 		driver.get(baseUrl);
 	}
 	

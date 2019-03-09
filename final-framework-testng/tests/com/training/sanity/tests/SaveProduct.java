@@ -54,7 +54,7 @@ public class SaveProduct {
 	@AfterMethod
 	public void tearDown() throws Exception {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		//close the browser
+		//close browser
 		driver.quit();
 	}
 	

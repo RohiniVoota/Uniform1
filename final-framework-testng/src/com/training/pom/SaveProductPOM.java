@@ -27,7 +27,7 @@ public class SaveProductPOM {
 		@FindBy(xpath="//*[@id=\"content\"]/div/div/div/div/div[2]/form/div[3]/button")
 		private WebElement loginBtn; 
 		
-		//locate menu
+		
 		@FindBy(xpath="//*[@id=\"button-menu\"]/i")
 		private WebElement menu;
 		

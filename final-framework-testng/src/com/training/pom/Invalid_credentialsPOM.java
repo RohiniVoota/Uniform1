@@ -19,9 +19,11 @@ public class Invalid_credentialsPOM {
 		@FindBy(xpath="//i[@class='fa fa-user']")
 		private WebElement myaccount;
 		
+		//locate login
 		@FindBy(xpath="//*[@id=\"top-links1\"]/ul/li[3]/ul/li[2]/a")
 		private WebElement login;
 		
+		//locate email
 		@FindBy(id="input-email")
 		private WebElement email;
 		

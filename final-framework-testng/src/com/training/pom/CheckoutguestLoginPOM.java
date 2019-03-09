@@ -23,7 +23,7 @@ public class CheckoutguestLoginPOM {
 	@FindBy(xpath="//*[@id=\"featured-carousel\"]/div/div/div[1]/div/div/div[1]/a/img")
 	private WebElement T_shirt;
 	
-	//locate add to cart
+	//locate add tocart
 	@FindBy(id="button-cart")
 	private WebElement cart;
 	

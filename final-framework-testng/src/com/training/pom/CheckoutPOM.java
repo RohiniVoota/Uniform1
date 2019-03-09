@@ -25,7 +25,7 @@ public class CheckoutPOM {
 	@FindBy(xpath="//*[@id=\"featured-carousel\"]/div/div/div[1]/div/div/div[1]/a/img")
 	private WebElement T_shirt;
 	
-	//locate add cart button
+	//locate add  to cart button
 	@FindBy(id="button-cart")
 	private WebElement cart;
 	

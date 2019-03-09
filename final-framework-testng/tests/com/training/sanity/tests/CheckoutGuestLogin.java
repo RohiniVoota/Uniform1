@@ -48,7 +48,7 @@ public class CheckoutGuestLogin {
 		tc0034_pom = new CheckoutguestLoginPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
-		// open the browser 
+		// open browser 
 		driver.get(baseUrl);
 	}
 	

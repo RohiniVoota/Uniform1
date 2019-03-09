@@ -39,7 +39,7 @@ public class Invalid_Credentials {
 		tc0031pom= new Invalid_credentialsPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
-		// open the browser 
+		// open  browser 
 		driver.get(baseUrl);
 	}
 	
