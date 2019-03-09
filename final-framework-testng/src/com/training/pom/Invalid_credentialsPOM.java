@@ -7,15 +7,15 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class ForgotPasswordPOM {
+public class Invalid_credentialsPOM {
 		private WebDriver driver; 
 		
-		public ForgotPasswordPOM(WebDriver driver) {
+		public Invalid_credentialsPOM(WebDriver driver) {
 			this.driver = driver; 
 			PageFactory.initElements(driver, this);
 		}
 		
-		
+		//locating the Elements
 		@FindBy(xpath="//i[@class='fa fa-user']")
 		private WebElement myaccount;
 		
@@ -27,19 +27,12 @@ public class ForgotPasswordPOM {
 		
 		@FindBy(id="input-password")
 		private WebElement password;
-				
+		
+		
 		@FindBy(xpath="//*[@id=\"content\"]/div/div[2]/div/form/input")
 		private WebElement LoginBtn;
 		
-		@FindBy(xpath="//*[@id=\"content\"]/div/div[2]/div/form/div[2]/a")
-		private WebElement FrgtPswd;
-		
-		@FindBy(xpath="//*[@id=\"input-email\"]")
-		private WebElement inputemail;
-		
-		@FindBy(xpath="//*[@id=\"content\"]/form/div/div[2]/input")
-		private WebElement continuebtn;
-		
+	
 		public void MyAccount() {
 			this.myaccount.click();
 		}
@@ -61,25 +54,11 @@ public class ForgotPasswordPOM {
 		public void LoginBtn() {
 			this.LoginBtn.click();
 		}
-		
-		public void FrgtPswd() {
-			this.FrgtPswd.click();
-		}
-		
-		public void inputemail(String inputemail) {
-			this.inputemail.sendKeys(inputemail);
+		public void Assertion() {
+			String Actual="RETURNING CUSTOMER";
+			String Expected=driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[2]/div/h2")).getText();
+			Assert.assertEquals(Actual,Expected);
 		}
 			
-		public void ContinueBtn() {
-			this.continuebtn.click();
-		}
-			
-        public void Assertion() {
-        	String Actual="An email with a confirmation link has been sent your email address.";
-    		String Expected=driver.findElement(By.xpath("/html/body/div[1]/div[1]")).getText();
-    		Assert.assertEquals(Actual,Expected);
-        }
-		
-		
 
 }

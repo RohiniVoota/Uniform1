@@ -3,6 +3,7 @@ package com.training.sanity.tests;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -46,8 +47,11 @@ public class Orders {
 	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
+		//close th browser
 		driver.quit();
 	}
+	
+	//To Verify whether application displays order details upon Clicking My Orders link
 	@Test
 	public void login() throws InterruptedException {
 		
@@ -55,18 +59,16 @@ public class Orders {
 		orderspom.Login();
 		orderspom.email("welcome@gmail.com");
 		orderspom.password("Rohini123");
-		
+		//click on login button
 		orderspom.LoginBtn();
 
-		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		orderspom.orders();
-		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		orderspom.view();
-		Thread.sleep(5000);
-		
-		String Actual="Order Information";
-		String Expected=driver.findElement(By.xpath("//*[@id=\"content\"]/h2")).getText();
-		Assert.assertEquals(Actual,Expected);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//assertion
+		orderspom.Assertion();
 		screenShot.captureScreenShot("Fourth");
 		
 	}

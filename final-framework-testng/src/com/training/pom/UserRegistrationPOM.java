@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 public class UserRegistrationPOM {
 
@@ -74,6 +75,7 @@ public class UserRegistrationPOM {
 		public void Firstname(String firstname) {
 			this.firstname.clear();
 			this.firstname.sendKeys(firstname);
+		
 		}
 		
 		public void Lastname(String lastname) {
@@ -130,6 +132,12 @@ public class UserRegistrationPOM {
 		public void ContinueBtn() {
 		this.Button.click();
 	
+		}
+		public void Assertion() {
+			String Actual="YOUR ACCOUNT HAS BEEN CREATED!";
+		    String Expected1=driver.findElement(By.xpath("//*[@id=\"content\"]/h1")).getText();
+		    Assert.assertEquals(Actual,Expected1);
+
 		}
 }
 

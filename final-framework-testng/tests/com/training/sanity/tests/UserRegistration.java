@@ -3,6 +3,7 @@ package com.training.sanity.tests;
 	import java.io.FileInputStream;
 	import java.io.IOException;
 	import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -46,7 +47,7 @@ import org.testng.annotations.AfterMethod;
 		
 		@AfterMethod
 		public void tearDown() throws Exception {
-			Thread.sleep(7000);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.quit();
 		}
     
@@ -73,13 +74,10 @@ import org.testng.annotations.AfterMethod;
 		    UserRegistrationPOM.checkbox();
 		    UserRegistrationPOM.ContinueBtn();
 		    
-		    Thread.sleep(2000);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    
-		    String Actual="YOUR ACCOUNT HAS BEEN CREATED!";
-		    String Expected1=driver.findElement(By.xpath("//*[@id=\"content\"]/h1")).getText();
-		    Assert.assertEquals(Actual,Expected1);
-
+		    UserRegistrationPOM.Assertion();
 			
 			screenShot.captureScreenShot("First");
 		}

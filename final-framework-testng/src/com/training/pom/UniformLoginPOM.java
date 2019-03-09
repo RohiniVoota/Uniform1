@@ -1,9 +1,11 @@
 package com.training.pom;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class UniformLoginPOM {
 		private WebDriver driver; 
@@ -50,6 +52,13 @@ public class UniformLoginPOM {
 		
 		public void LoginBtn() {
 			this.LoginBtn.click();
+		}
+		
+		public void Assertion() {
+			String Actual="MY ACCOUNT";
+			String Expected=driver.findElement(By.xpath("//*[@id=\"content\"]/h1")).getText();
+			Assert.assertEquals(Actual,Expected);
+			
 		}
 			
        

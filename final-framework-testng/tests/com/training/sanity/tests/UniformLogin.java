@@ -3,6 +3,7 @@ package com.training.sanity.tests;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -44,24 +45,23 @@ public class UniformLogin {
 	
 	@AfterMethod
 	public void tearDown() throws Exception {
-		Thread.sleep(1000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.quit();
 	}
+	
+	//To verify login functionality by entering valid details in the required fields
 	@Test
 	public void validLogin() {
 		
 		uniformloginpom.MyAccount();
 		uniformloginpom.Login();
+		//Enter credentials
 		uniformloginpom.email("welcome@gmail.com");
 		uniformloginpom.password("Rohini123");
+		//click on login
 		uniformloginpom.LoginBtn();
-		
-		String Actual="MY ACCOUNT";
-		String Expected=driver.findElement(By.xpath("//*[@id=\"content\"]/h1")).getText();
-		Assert.assertEquals(Actual,Expected);
-		
-		
-		
+		//Assertion
+		uniformloginpom.Assertion();
 		
 		screenShot.captureScreenShot("second");
 	}

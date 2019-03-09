@@ -1,89 +1,313 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27358" started-at="2018-12-18T18:16:26Z" finished-at="2018-12-18T18:16:53Z">
+  <suite name="Default suite" duration-ms="81353" started-at="2019-03-09T05:20:03Z" finished-at="2019-03-09T05:21:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27358" started-at="2018-12-18T18:16:26Z" finished-at="2018-12-18T18:16:53Z">
-      <class name="com.training.regression.tests.LoginExcelTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="setUpBeforeClass" is-config="true" duration-ms="15" started-at="2018-12-18T23:46:26Z" finished-at="2018-12-18T23:46:26Z">
+    <test name="Default test" duration-ms="81353" started-at="2019-03-09T05:20:03Z" finished-at="2019-03-09T05:21:24Z">
+      <class name="com.training.sanity.tests.MultipleInvalidRegsitrations">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.MultipleInvalidRegsitrations@3e6fa38a]" name="setUpBeforeClass" is-config="true" duration-ms="29" started-at="2019-03-09T05:20:03Z" finished-at="2019-03-09T05:20:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="5796" started-at="2018-12-18T23:46:27Z" finished-at="2018-12-18T23:46:32Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.MultipleInvalidRegsitrations@3e6fa38a]" name="setUp" is-config="true" duration-ms="10473" started-at="2019-03-09T05:20:04Z" finished-at="2019-03-09T05:20:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="loginDBTest" duration-ms="2700" started-at="2018-12-18T23:46:32Z" data-provider="excel-inputs" finished-at="2018-12-18T23:46:35Z">
+        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.MultipleInvalidRegsitrations@3e6fa38a]" name="loginDBTest" duration-ms="10243" started-at="2019-03-09T05:20:15Z" data-provider="excel-inputs1" finished-at="2019-03-09T05:20:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[hello]]>
+                <![CDATA[rakhi]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[admin@123]]>
+                <![CDATA[23456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rakhi@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9876567738]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[K.R. Road]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[560012]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[rakhi]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[rakhi]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDBTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="tearDown" is-config="true" duration-ms="788" started-at="2018-12-18T23:46:35Z" finished-at="2018-12-18T23:46:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.MultipleInvalidRegsitrations@3e6fa38a]" name="tearDown" is-config="true" duration-ms="770" started-at="2019-03-09T05:20:25Z" finished-at="2019-03-09T05:20:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="4885" started-at="2018-12-18T23:46:36Z" finished-at="2018-12-18T23:46:41Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.MultipleInvalidRegsitrations@3e6fa38a]" name="setUp" is-config="true" duration-ms="9040" started-at="2019-03-09T05:20:26Z" finished-at="2019-03-09T05:20:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="loginDBTest" duration-ms="3104" started-at="2018-12-18T23:46:41Z" data-provider="excel-inputs" finished-at="2018-12-18T23:46:44Z">
+        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.MultipleInvalidRegsitrations@3e6fa38a]" name="loginDBTest" duration-ms="9092" started-at="2019-03-09T05:20:35Z" data-provider="excel-inputs1" finished-at="2019-03-09T05:20:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[naveen]]>
+                <![CDATA[vaibhavi]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[testing@123]]>
+                <![CDATA[mathur]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vaibhav]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9744666483]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[B.T.M layout]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[560016]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[vaibhavi]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[vaibhavi]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDBTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="tearDown" is-config="true" duration-ms="767" started-at="2018-12-18T23:46:44Z" finished-at="2018-12-18T23:46:45Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.MultipleInvalidRegsitrations@3e6fa38a]" name="tearDown" is-config="true" duration-ms="729" started-at="2019-03-09T05:20:44Z" finished-at="2019-03-09T05:20:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="5306" started-at="2018-12-18T23:46:45Z" finished-at="2018-12-18T23:46:50Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.MultipleInvalidRegsitrations@3e6fa38a]" name="setUp" is-config="true" duration-ms="8343" started-at="2019-03-09T05:20:45Z" finished-at="2019-03-09T05:20:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="loginDBTest" duration-ms="2595" started-at="2018-12-18T23:46:50Z" data-provider="excel-inputs" finished-at="2018-12-18T23:46:53Z">
+        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.MultipleInvalidRegsitrations@3e6fa38a]" name="loginDBTest" duration-ms="9730" started-at="2019-03-09T05:20:53Z" data-provider="excel-inputs1" finished-at="2019-03-09T05:21:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[delete]]>
+                <![CDATA[neethi]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[delete]]>
+                <![CDATA[mohan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[neethi@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[hgtttww]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Gokulam]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Maharasthra]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Maharasthra]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[571234]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Maharashtra]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[neethi]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[neethi]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDBTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="tearDown" is-config="true" duration-ms="795" started-at="2018-12-18T23:46:53Z" finished-at="2018-12-18T23:46:53Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.MultipleInvalidRegsitrations@3e6fa38a]" name="tearDown" is-config="true" duration-ms="677" started-at="2019-03-09T05:21:03Z" finished-at="2019-03-09T05:21:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.regression.tests.LoginExcelTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.MultipleInvalidRegsitrations@3e6fa38a]" name="setUp" is-config="true" duration-ms="7868" started-at="2019-03-09T05:21:03Z" finished-at="2019-03-09T05:21:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.MultipleInvalidRegsitrations@3e6fa38a]" name="loginDBTest" duration-ms="12332" started-at="2019-03-09T05:21:11Z" data-provider="excel-inputs1" finished-at="2019-03-09T05:21:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Diya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Krishna]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[diya@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[7123457656]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Hitec city]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[hyderabad]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[hyderabad]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9876547]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Telangana]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[diya]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[diya]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDBTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.MultipleInvalidRegsitrations@3e6fa38a]" name="tearDown" is-config="true" duration-ms="758" started-at="2019-03-09T05:21:24Z" finished-at="2019-03-09T05:21:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.sanity.tests.MultipleInvalidRegsitrations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

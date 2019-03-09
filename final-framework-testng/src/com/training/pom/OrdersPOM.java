@@ -1,9 +1,11 @@
 package com.training.pom;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class OrdersPOM {
 		private WebDriver driver; 
@@ -66,7 +68,11 @@ public class OrdersPOM {
 		this.view.click();
 	}
 		
-		
+		public void Assertion() {
+			String Actual="Order Information";
+			String Expected=driver.findElement(By.xpath("//*[@id=\"content\"]/h2")).getText();
+			Assert.assertEquals(Actual,Expected);
+		}
 			
 
 		

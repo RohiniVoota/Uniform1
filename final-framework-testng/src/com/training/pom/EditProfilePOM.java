@@ -1,9 +1,11 @@
 package com.training.pom;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class EditProfilePOM {
 		private WebDriver driver; 
@@ -13,7 +15,7 @@ public class EditProfilePOM {
 			PageFactory.initElements(driver, this);
 		}
 		
-		
+		//locating elements
 		@FindBy(xpath="//i[@class='fa fa-user']")
 		private WebElement myaccount;
 		
@@ -48,6 +50,7 @@ public class EditProfilePOM {
 		@FindBy(xpath="//*[@id=\"content\"]/form/div/div[2]/input")
 		private WebElement continuebtn;
 		
+		//Methods
 		public void MyAccount() {
 			this.myaccount.click();
 		}
@@ -101,6 +104,12 @@ public class EditProfilePOM {
 		public void Continue() {
 			
 			this.continuebtn.click();
+		}
+		
+		public void Assertion() {
+			String Actual="Success: Your account has been successfully updated.";
+			String Expected=driver.findElement(By.xpath("/html/body/div[1]/div[1]")).getText();
+			Assert.assertEquals(Actual, Expected);
 		}
 		
 		
